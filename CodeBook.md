@@ -11,7 +11,7 @@ The Human Activity Recognition Using Smartphones Dataset
 The Human Activity Recognition Using Smartphones Dataset includes several measurements of activity-related variables for a group of 30 volunteers each performing six different activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). Please consult the README.txt provided with the dataset for a detailed description of the original dataset. 
 
 
-The dataset “tidy_data.csv”
+The dataset “tidy_data.txt”
 ==================================================================
 
 The provided “tidy_data.csv” contains the average, for each activity and each subject, of the mean and of the standard deviation of the different activity-related variables. 
@@ -25,7 +25,7 @@ The dataset is constituted by 180 rows and 68 columns.
 - Columns 3 to 68 contain the averages.
 
 
-The data-processing to obtain the dataset “tidy_data.csv”
+The data-processing to obtain the dataset “tidy_data.txt”
 ==================================================================
 
 The tidy_data.csv dataset is obtained from the Human Activity Recognition Using Smartphones Dataset by executing the run_analysis.R script. The script applies the following data-processing:
