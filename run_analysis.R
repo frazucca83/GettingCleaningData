@@ -59,13 +59,13 @@ testSubject <- "/Users/francesco/Downloads/UCI_HAR_Dataset/test/subject_test.txt
  
  for ( i in 1:nlevels(activity$Activity) ) {
          for( j in 1:nlevels(subject$Subject) ){
-                 # Select the a part of the data frame based on activity (first) and Subject (second)
+                 # Select the part of the data frame based on activity (first) and Subject (second)
                  t  <- a[[i]][a[[i]]$Subject == j,]
                  # Compute the colum means
                  tt <- colMeans(t[,3:dim(t)[2]])
                  if (i == 1 & j == 1 ){ 
                          # Initialize the new data frame and call it data, so to 
-                         # override initial, and not needed anymore, data object  
+                         # overwrite the initial, and not needed anymore, data object  
                          data <- data.frame( Activity = as.character(a[[i]]$Activity[1]), 
                                              Subject  = as.character(j) , t(tt) )
                  } else { # Add a new row to the data frame
