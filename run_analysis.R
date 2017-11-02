@@ -68,10 +68,10 @@ testSubject <- "/Users/francesco/Downloads/UCI_HAR_Dataset/test/subject_test.txt
                  if (i == 1 & j == 1 ){ 
                          # Initialize the new data frame and call it data, so to 
                          # override initial, and not needed anymore, data object  
-                         data <- data.frame( Activity = activity_label$V2[i], 
+                         data <- data.frame( Activity = as.character(a[[i]]$Activity[1]), 
                                              Subject  = as.character(j) , t(tt) )
                  } else { # Add a new row to the data frame
-                         tmp <-  data.frame( Activity = activity_label$V2[i], 
+                         tmp <-  data.frame( Activity = as.character(a[[i]]$Activity[1]), 
                                              Subject  = as.character(j) , t(tt) )
                          data <- rbind(data,tmp)
                  }
