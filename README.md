@@ -2,7 +2,7 @@ This is the README file for the Programming Assignment of the course Getting and
 
 The repository contains the following files. 
 
-1. tidy_data.cvs: contains the average, for each activity and each subject, of the mean and of the standard deviation of the different activity-related variables. 
+1. tidy_data.txt: contains the average, for each activity and each subject, of the mean and of the standard deviation of the different activity-related variables. 
 2. CodeBook.md: Describes the dataset, and how to obtain it starting from the Human Activity Recognition Using Smartphones Dataset.
 3. run_analysis.R: The script to obtain the dataset, tidy_data.cvs, from the Human Activity Recognition Using Smartphones Dataset. 
 4. This README.md file.
