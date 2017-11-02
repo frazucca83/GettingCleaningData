@@ -45,9 +45,7 @@ testSubject <- "/Users/francesco/Downloads/UCI_HAR_Dataset/test/subject_test.txt
          activity[activity == activity_label[[1]][i]] <- activity_label[[2]][i]
  }
  
- # Cbind the activity and the subject as factors with the data1. 
- # Write the result in data, so to override the memory 
- # consuming, and not needed anymore object  
+ # Cbind the activity and the subject as factors with the data1.  
  
  activity$Activity <- as.factor(activity$Activity)
  subject$Subject <- as.factor(subject$Subject)
